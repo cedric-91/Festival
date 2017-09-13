@@ -1,0 +1,274 @@
+.clear
+  clear: both
+
+.col-12
+  width: 70%
+  margin: 0 auto
+  //position: relative
+
+.contact-column
+  width: 100%
+  +flex
+  +flex-direction(row)
+
+.bold-text
+  font-weight: 700
+
+.open-nav
+  height: 60px
+
+.details-container
+  display: none
+  height: 100%
+
+.display-block
+  display: block
+
+.map
+  width: 100%
+  height: 100%
+
+.heading-opa
+  width: 330px
+  +transition(all 850ms ease-in-out 0s)
+
+.btn-link
+  text-decoration: none
+  background-color: $orange
+  color: $white
+  padding: 0.4em 2.0em
+  font-size: $text-font
+  font-weight: 700
+  position: relative
+  top: 60px
+  +border-radius(0.4em)
+  +transition(color 700ms ease-in-out 0s)
+  &:hover
+    color: $black
+
+.center-logo
+  width: 25.5%
+  position: absolute
+  left: 50%
+  top: 50%
+  margin-top: -15em
+  +transform(translate(-50%, -50%))
+
+.img-center
+  position: relative
+  top: 50%
+  +transform(translateY(-50%))
+
+.padding-left-right
+  padding: 0 2.0em
+  +box-sizing(border-box)
+
+.margin-top-large
+  margin-top: 40px
+
+.margin-top-medium
+  margin-top: 20px
+
+.margin-bottom-medium
+  margin-bottom: 20px
+
+.black
+  color: $black
+
+.orange
+  color: $orange
+
+.white
+  color: $white
+
+.bg-color-orange
+  background-color: $orange
+
+.red-car
+  margin-top: 50px
+
+.column
+  height: auto
+  +flex
+  +flex-direction(row)
+  +align-items(center)
+  position: relative
+  z-index: 999
+  //background: pink
+  .content
+    width: 50%
+
+.columns-origin
+  +transform(translateX(0))
+  +transition(transform 500ms ease-in 0s)
+  padding-right: 0.6em
+  +box-sizing(border-box)
+
+.animate-center
+  position: relative
+  top: 50%
+  +transform(translateY(-50%))
+  opacity: 0.2
+  +transition(all 850ms ease-in-out 0s)
+
+.active
+  //+transform-origin(left center)
+  &:first-child
+    +transform(translate(2px,4px) rotate(45deg))
+    transform-origin: left center
+
+  &:last-child
+    +transform(translate(2px, 8px) rotate(-45deg))
+    transform-origin: left center
+
+.active:nth-child(2)
+  opacity: 0
+
+.bg-texture
+  background: $black url(../img/textures/tarmax-texture.jpg) 0 0 no-repeat
+  +background-size(cover)
+
+.bg-pattern
+  background: $orange url(../img/textures/pattern.svg) repeat
+  +background-size(10%)
+
+.detail-list
+  padding-left: 1.15em
+  li
+    margin: 0.6em 0
+    &:last-child
+      margin-bottom: 0
+    &:first-child
+      margin-top: 0
+
+//.height-650
+  height: 650px
+
+
+/**** Large Desktop (1680px) *****/
+@media screen and (max-width: $large-desktop)
+  .center-logo
+    top: 100%
+    width: 28em
+    +transform(translate(-50%, -60%))
+
+  //.height-650
+    height: 375px
+
+  .btn-link
+    //position: relative
+    top: 30px
+
+/**** Ipad Screen (1024px)*****/
+@media screen and (max-width: $ipad-screen)
+  .center-logo
+    width: 28em
+    top: 100%
+  .column
+    flex-direction: column
+    .content
+      width: 100%
+
+  .animate-center
+    position: static
+    top: 0
+    +transform(translateY(0))
+    opacity: 1
+    //+transition(all 850ms ease-in-out 0s)
+
+/**** iPhone Screen (640px)*****/
+@media screen and (max-width: $iphone-screen)
+  .center-logo
+    width: 25em
+    //top: 50%
+    //left: 60%
+    //+transform(translate(-60%, -50%))
+    margin-top: -50px
+
+  .btn-link
+    font-size: 0.88em
+    padding: 0.65em 2.0em
+
+  .bg-pattern
+    +background-size(50%)
+
+/**** Smaller Screen (320px) *****/
+@media screen and (max-width: $smaller-screen)
+  .center-logo
+    width: 18em
+
+/**** Window Large Screen (768px) *****/
+@media screen and (max-width: $window-large-screen)
+  //.height-650
+    height: 475px
+
+  .column
+    .content
+      width: 100%
+      float: none
+  .open-nav
+    height: 250px
+
+  .center-logo
+    width: 25em
+    top: 50%
+    left: 60%
+    +transform(translate(-60%, -50%))
+    margin-top: -50px
+
+  .red-car
+    margin: 0
+
+  .contact-column
+    +flex-direction(column)
+    //background: pink
+
+  .animate-center
+    position: static
+    top: 0
+    +transform(translateY(0))
+    opacity: 1
+    //+transition(all 850ms ease-in-out 0s)
+
+  .bg-pattern
+    +background-size(20%)
+
+/**** Window Small Screen (480px) *****/
+@media screen and (max-width: $window-small-screen)
+  .btn-link
+    font-size: 0.78em
+    top: 40px
+
+  //.height-650
+    height: 760px
+
+  .column
+    .content
+      width: 100%
+      float: none
+
+  .center-logo
+    width: 13.5em
+    top: 67%
+    left: 60%
+    +transform(translate(-60%, -50%))
+    margin-top: -50px
+
+  .animate-center
+    position: static
+    top: 0
+    +transform(translateY(0))
+    opacity: 1
+    //+transition(all 850ms ease-in-out 0s)
+
+/**** NetBook Screen (1280px) ****/
+@media screen and (max-width: $netbook-screen)
+  .contact-column
+    +flex-direction(column)
+
+  .animate-center
+    position: static
+    top: 0
+    +transform(translateY(0))
+    opacity: 1
+    //+transition(all 850ms ease-in-out 0s)

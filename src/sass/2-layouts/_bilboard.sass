@@ -1,0 +1,160 @@
+.bilboard
+  height: 100vh
+  background: $white url(../img/hero-image.jpg) 100% 40% no-repeat
+  +background-size(cover)
+  position: relative
+.mastheads
+  width: 100%
+  min-height: 100px
+  padding: 10px 0
+  background-color: $black
+  .col-12
+    //line-height: 115px
+    text-align: center
+    figure
+      width: 10.5em
+      height: auto
+      margin: 0 5.5%
+      display: inline-block
+      &:first-child
+        margin-left: 0
+      &:last-child
+        margin-right: 0
+        position: relative
+        top: 25px
+        width: 12em
+    figure:nth-child(3)
+      width: 12em
+
+/**** Large Desktop *****/
+/*@media screen and (max-width: $large-desktop)
+  .bilboard
+    +background-size(cover)
+    height: 500px
+  .mastheads
+    height: auto
+    .col-12
+      line-height: normal
+      text-align: center
+      padding: 35px 0
+      figure
+        width: 10.5em
+        margin: 0 0.58em
+        position: relative
+        top: -10px
+        &:last-child
+          width: 8.5em
+          top: 4px
+      figure:nth-child(3)
+        width: 8.5em
+        top: -10px
+
+/**** Small Desktop *****/
+/*@media screen and (max-width: $small-desktop)
+  .bilboard
+    +background-size(cover)
+    .mastheads
+
+      figure
+        width: 12.5em
+        margin: 0 0.45em
+
+/**** Netbook Screen *****/
+/*@media screen and (max-width: $netbook-screen)
+  .bilboard
+    background: $white url(../img/hero-image.jpg) no-repeat
+    +background-size(cover)
+    height: 575px
+    .mastheads
+      text-align: center
+      figure
+        width: 10.5em
+        margin: 0 0.82em
+
+/**** Ipad Screen *****/
+/*@media screen and (max-width: $ipad-screen)
+  .bilboard
+    background: $white url(../img/hero-image.jpg) no-repeat
+    +background-size(cover)
+    .mastheads
+      bottom: 45px
+      figure
+        width: 8.5em
+        margin: 0 0.50em
+
+/**** Window Large Screen *****/
+/*@media screen and (max-width: $window-large-screen)
+  .bilboard
+    background: $white url(../img/hero-image.jpg) no-repeat
+    +background-size(cover)
+    height: 500px
+    .mastheads
+      bottom: 60px
+      figure
+        width: 6.5em
+        height: auto
+        margin: 0 0.50em
+        &:last-child
+          top: 10.5px
+
+/**** iPhone Screen *****/
+/*@media screen and (max-width: $iphone-screen)
+  .bilboard
+    background: $white url(../img/hero-image.jpg) no-repeat
+    +background-size(cover)
+    .mastheads
+      left: 50px
+      bottom: 40px
+      .col-12
+        padding: 35px 0
+        line-height: normal
+        figure
+          width: 8.5em
+          margin: 0 0.50em
+          &:last-child
+            width: 8.5em
+            top: 20px
+            position: relative
+
+/**** Window small Screen *****/
+/*@media screen and (max-width: $window-small-screen)
+  .bilboard
+    background: $white url(../img/hero-image.jpg) no-repeat
+    +background-size(cover)
+    height: 295px
+  .mastheads
+    height: auto
+    .col-12
+      line-height: normal
+      text-align: center
+      padding: 24px 0 0 0
+      figure
+        width: 8.5em
+        margin: 15px 0.58em
+        &:last-child
+          width: 8.5em
+          top: -10px
+          position: relative
+
+
+/**** Window small Screen *****/
+/*@media screen and (max-width: 979px) and (min-width: 800px)
+  .bilboard
+    //background: $white url(../img/hero-image.jpg) no-repeat
+    //+background-size(cover)
+    //height: 295px
+  .mastheads
+    height: 125px
+    .col-12
+      line-height: normal
+      text-align: center
+      padding: 24px 0 0 0
+      figure
+        width: 7.5em
+        margin: 15px 0.58em
+        &:last-child
+          width: 7.5em
+          top: -10px
+          position: relative
+      figure:nth-child(3)
+        width: 7.5em

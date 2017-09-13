@@ -1,0 +1,174 @@
+@import "../_variables"
+
+.off-track
+	min-height: 450px
+	padding: 20px 0
+	&::before, &::after
+		content: ""
+		display: table
+	&::after
+		clear: both
+	.col-12
+		height: 540px
+		.left-content
+			h1
+				//padding-top: 20px
+				margin: 0
+
+/*** Very Large Screen (2175px) ****/
+/*@media screen and (max-width: 2175px) and (min-width: 2053px)
+	.off-track
+		height: 585px
+		padding: 10px 0
+		.col-12
+			height: 585px
+			.left-content
+				h1
+					//padding-top: 20px
+					margin: 0
+
+/*** Very Large Screen (2052px) ****/
+/*@media screen and (max-width: 2052px) and (min-width: 1580px)
+	.off-track
+		height: 500px
+		padding: 10px 0
+		.col-12
+			//height: 590px
+			//background: red
+			.left-content
+				h1
+					//padding-top: 20px
+					margin: 0
+
+
+/*** Very Large Screen (1679px) ****/
+//@media screen and (max-width: 1679px) and (min-width: 1580px)
+	//.off-track
+		//height: 457px
+		//padding: 10px 0
+		//.col-12
+			//height: 457px
+			//background: pink
+			//.left-content
+				//h1
+					//padding-top: 20px
+					//margin: 0
+
+
+/**** Large Desktop (1680px)******/
+/*@media screen and (max-width: $large-desktop)
+	.off-track
+		height: 550px
+		.column
+			.left-content
+				margin-top: 50px
+				//background: pink
+				//height: auto
+			.right-content
+				height: 500px
+				figure
+					//position: relative
+					//top: 50%
+					//+transform(translateY(-50%))
+
+/**** iPad Screen *****/
+/*@media screen and (max-width: $ipad-screen) and (min-width: 875px)
+	.off-track
+		height: 870px
+		padding-bottom: 40px
+		+box-sizing(border-box)
+		.col-12
+			height: 870px
+			.column
+				height: 870px
+				+flex
+				+flex-direction(column)
+				.left-content
+					order: 2
+					margin-top: 0
+					height: auto
+				.right-content
+					order: 1
+					height: 500px
+					figure
+						//position: static
+
+/**** 874px Max-Width *****/
+/*@media screen and (max-width: 874px) and (min-width: $window-large-screen)
+	.off-track
+		height: 785px
+		.col-12
+			height: 785px
+			.column
+				height: 785px
+				+flex
+				+flex-direction(column)
+				.left-content
+					order: 2
+					margin-top: 0
+					height: auto
+				.right-content
+					order: 1
+					height: auto
+					figure
+
+/**** 767px Max-Width *****/
+/*@media screen and (max-width: 767px) and (min-width: $iphone-screen)
+	.off-track
+		height: 755px
+		.col-12
+			height: 755px
+			.column
+				height: 755px
+				+flex
+				+flex-direction(column)
+				.left-content
+					order: 2
+					margin-top: 0
+					height: auto
+				.right-content
+					order: 1
+					height: auto
+					figure
+
+
+/**** 639px Max-Width *****/
+/*@media screen and (max-width: 639px) and (min-width: $window-small-screen)
+	.off-track
+		height: 745px
+		padding: 10px 0
+		.col-12
+			height: 745px
+			.column
+				//height: 707px
+				//+flex
+				//+flex-direction(column)
+				.left-content
+					order: 2
+					margin-top: 0
+					height: auto
+				.right-content
+					order: 1
+					height: auto
+					figure
+
+/**** 479px Max-Width *****/
+/*@media screen and (max-width: 479px) and (min-width: $smaller-screen)
+	.off-track
+		height: 762px
+		padding: 10px 0
+		.col-12
+			height: 762px
+			//background: pink
+			.column
+				height: 775px
+				+flex
+				+flex-direction(column)
+				.left-content
+					order: 2
+					margin-top: 0
+					height: auto
+				.right-content
+					order: 1
+					height: auto
+					figure

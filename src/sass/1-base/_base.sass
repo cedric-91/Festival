@@ -1,0 +1,47 @@
+@import "../_variables"
+body
+  font-family: "Overpass", sans-serif
+  overflow-x: hidden
+  //display: none
+h1
+  font-weight: 700
+  font-size: $main-header-font
+  margin: 0
+
+h2,h3
+  font-weight: 700
+  font-size: $second-header-font
+  margin: 0
+
+p
+  font-size: $text-font
+  margin: 0
+
+img
+  width: 100%
+  height: auto
+
+figure
+  margin: 0
+
+ul, ol
+  margin: 0
+
+address
+  line-height: 1.5
+  font-style: italic
+
+iframe
+  width: 100%
+
+@media screen and (max-width: $large-desktop) and (min-width: $smaller-screen)
+  h1
+    font-size: $t-main-header-font
+  h2, h3
+    font-size: 30px
+  p
+    font-size: $t-text-font
+  iframe
+    height: 100%
+  address
+    width: 100%
